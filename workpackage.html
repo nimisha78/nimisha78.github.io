@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Work Package</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background: #f4f2ed;
+      color: #1e1e1e;
+      padding: 80px 24px 140px;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── TAG ── */
+    .wp-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #5a6abf;
+      background: #e8eaf5;
+      border: 1px solid #c0c8e8;
+      border-radius: 2px;
+      padding: 4px 11px;
+      margin-bottom: 24px;
+    }
+
+    /* ── TITLE ── */
+    h1.main-title {
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 700;
+      line-height: 1.18;
+      color: #111;
+      max-width: 700px;
+      margin-bottom: 20px;
+    }
+
+    /* ── SUBTITLE ── */
+    p.main-subtitle {
+      font-size: clamp(16px, 2.1vw, 19px);
+      font-weight: 300;
+      line-height: 1.82;
+      color: #555;
+      max-width: 720px;
+      margin-bottom: 64px;
+    }
+
+    /* ── EYEBROW ── */
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #bbb;
+      margin-bottom: 18px;
+    }
+
+    /* ── SKETCHES ── */
+    .sketches-section { margin-bottom: 56px; }
+
+    .sketches-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .sketch-frame {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .sketch-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .sketch-caption {
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      color: #aaa;
+      line-height: 1.65;
+    }
+
+    /* ── CALLOUT ── */
+    .callout {
+      background: #fff;
+      border: 1.5px solid #c0c8e8;
+      border-left: 5px solid #5a6abf;
+      border-radius: 4px;
+      padding: 32px 36px;
+      margin-bottom: 64px;
+    }
+
+    .callout p {
+      font-size: clamp(17px, 2.2vw, 20px);
+      font-weight: 300;
+      line-height: 1.9;
+      color: #333;
+    }
+
+    /* ── APPROACH TEXT ── */
+    .approach-section { margin-bottom: 48px; }
+
+    h2.approach-heading {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    p.approach-body {
+      font-size: clamp(16px, 2vw, 18px);
+      font-weight: 300;
+      line-height: 1.85;
+      color: #555;
+      max-width: 740px;
+    }
+
+    /* ── DIAGRAM ── */
+    .diagram-section { margin-bottom: 80px; }
+
+    .diagram-wrap {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #f4f1eb;
+    }
+
+    .diagram-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .sketches-grid { grid-template-columns: 1fr; }
+      .callout { padding: 24px 22px; }
+    }
+  </style>
+
+</head>
+<body>
+
+<nav>
+  <div class="logo">Nimisha Archive</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="workpackage.html" class="active">Work Package</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <!-- TAG + TITLE + SUBTITLE -->
+  <div class="wp-tag">Work Package 1</div>
+
+  <h1 class="main-title">
+    Developing Experience-Grounded Features for Player Research
+  </h1>
+
+  <p class="main-subtitle">
+    You cannot measure something properly if you do not first understand it.
+    Gameplay data is neat and precise — every button press, every death, every pause can be recorded.
+    Player experience does not show up so cleanly. It appears indirectly, in patterns.
+    This is why the approach to WP1 is intentionally inverted.
+  </p>
+
+  <!-- SKETCHES -->
+  <div class="sketches-section">
+    <div class="section-eyebrow">First thinking — rough</div>
+
+    <div class="sketches-grid">
+      <div class="sketch-frame">
+        <img src="images/sketch-page1.jpg" alt="First thinking sketch — page 1" />
+      </div>
+      <div class="sketch-frame">
+        <img src="images/sketch-page2.jpg" alt="First thinking sketch — page 2" />
+      </div>
+    </div>
+
+    <p class="sketch-caption">
+      Two pages of initial thinking, drawn on a Friday. The crossed-out "start with logs" is not
+      decorative — it was the first instinct, rejected before anything else was written.
+    </p>
+  </div>
+
+  <!-- CALLOUT -->
+  <div class="callout">
+    <p>
+      The diagram below traces the logical sequence of this approach as a chain of inferential
+      dependencies — each phase exists because the one before it leaves something unresolved.
+      The flow can be read as a set of nested questions: what are we trying to understand, what
+      does that look like in practice, how do we observe it systematically, how do we translate
+      observation into features, and how do we know those features hold. Each answer generates
+      the conditions for the next.
+    </p>
+  </div>
+
+  <!-- APPROACH TEXT -->
+  <div class="approach-section">
+    <h2 class="approach-heading">The Conceptual Approach</h2>
+    <p class="approach-body">
+      Instead of starting with gameplay logs and extracting as many features as possible,
+      the approach starts with player experience as a whole — works backward to behaviour —
+      and only then moves forward to feature engineering. Correlation without understanding
+      is fragile. A feature that predicts frustration in one game context but not another is
+      not a feature; it is a coincidence. Grounding the work in observed experience first is
+      what gives the engineered features their interpretive stability.
+    </p>
+  </div>
+
+  <!-- DIAGRAM -->
+  <div class="diagram-section">
+    <div class="diagram-wrap">
+      <img src="images/wp1-diagram.jpg" alt="WP1 Conceptual Flow Diagram" />
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+</body>
+</html>

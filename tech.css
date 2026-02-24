@@ -1,0 +1,459 @@
+/* ============================================================
+   TECH.CSS — The Tech-Age Conundrum
+   Warmer palette. More editorial. Same Source Sans Pro family.
+============================================================ */
+
+.tech-page { background: #f5f3ee; color: #1a1a1a; }
+
+/* ── WRAP ── */
+.tech-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 64px 24px 140px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ── TAG ── */
+.t-tag {
+  display: inline-block;
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: #7a5230;
+  background: #f2ebe0;
+  border: 1px solid #d9c9b0;
+  border-radius: 2px;
+  padding: 4px 11px; margin-bottom: 24px;
+}
+
+/* ── TITLE ── */
+.t-title {
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 700; line-height: 1.13;
+  color: #111; max-width: 820px; margin-bottom: 28px;
+}
+
+/* ── LEAD ── */
+.t-lead {
+  font-size: clamp(17px, 2.2vw, 20px);
+  font-weight: 400; line-height: 1.82;
+  color: #5a3e28;
+  border-left: 5px solid #b07040;
+  padding: 18px 24px;
+  background: #f2ebe0;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 40px; max-width: 860px;
+}
+
+/* ── META ROW ── */
+.t-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px; margin-bottom: 16px;
+}
+.meta-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 14px 16px;
+}
+.meta-label {
+  display: block;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #bbb; margin-bottom: 5px;
+}
+.meta-val {
+  font-size: 13px; font-weight: 400;
+  color: #333; line-height: 1.45;
+}
+
+/* ── BODY TEXT ── */
+.t-body {
+  font-size: clamp(15px, 1.9vw, 17px);
+  font-weight: 300; line-height: 1.9;
+  color: #444; margin: 28px 0; max-width: 860px;
+}
+
+/* ── RULE ── */
+.t-rule {
+  width: 44px; height: 2.5px;
+  background: #b07040;
+  margin: 64px 0 56px;
+}
+
+/* ── EYEBROW ── */
+.t-eyebrow {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #bbb; margin-bottom: 14px;
+}
+
+/* ── HEADING ── */
+.t-heading {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700; color: #111;
+  line-height: 1.2; margin-bottom: 20px; margin-top: 0;
+}
+
+/* ── FULL IMAGE ── */
+.t-img-frame {
+  width: 100%; border-radius: 6px;
+  overflow: hidden; margin: 32px 0;
+  border: 1px solid #ddd;
+}
+.t-img-frame img { width: 100%; height: auto; display: block; }
+
+/* ══════════════════════════════════
+   MOTIVATION
+══════════════════════════════════ */
+.motivation-block {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 32px; margin: 32px 0; align-items: start;
+}
+.motivation-text .t-body { margin: 0 0 20px; }
+
+.pull-quote {
+  background: #1a1a1a; color: #f5f3ee;
+  padding: 32px 28px;
+  font-size: clamp(17px, 2vw, 20px);
+  font-weight: 300; font-style: italic;
+  line-height: 1.75; border-radius: 4px;
+}
+.pq-attr {
+  display: block;
+  margin-top: 16px;
+  font-size: 12px; font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #888;
+}
+
+/* ══════════════════════════════════
+   VIDEO BLOCK
+══════════════════════════════════ */
+.video-wrap {
+  margin: 40px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #111;
+}
+.video-wrap video {
+  width: 100%; display: block;
+  max-height: 520px; object-fit: cover;
+}
+
+/* ══════════════════════════════════
+   MEME GRID
+══════════════════════════════════ */
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px; margin: 32px 0;
+}
+.meme-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px; overflow: hidden;
+}
+.meme-img-wrap { background: #f0ece4; }
+.meme-img-wrap img { width: 100%; height: auto; display: block; }
+.meme-caption {
+  padding: 12px 14px 16px;
+  border-top: 1px solid #eee;
+  font-size: 13px; font-weight: 300;
+  color: #666; line-height: 1.55;
+}
+.meme-tag {
+  display: block;
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #b07040; margin-bottom: 6px;
+}
+.meme-note {
+  font-size: 14px !important;
+  font-style: italic; color: #999 !important;
+  margin-top: 0 !important;
+}
+
+/* ══════════════════════════════════
+   RESEARCH QUESTIONS
+══════════════════════════════════ */
+.rq-list {
+  display: flex; flex-direction: column;
+  gap: 0; margin: 32px 0;
+}
+.rq-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  border-top: 1px solid #d8d4cc;
+  padding: 22px 0;
+}
+.rq-item:last-child { border-bottom: 1px solid #d8d4cc; }
+.rq-num {
+  font-family: 'Courier New', monospace;
+  font-size: 11px; font-weight: 700;
+  color: #b07040; padding-top: 3px;
+  letter-spacing: 0.08em;
+}
+.rq-text {
+  font-size: clamp(15px, 1.9vw, 17px);
+  font-weight: 300; color: #333; line-height: 1.75;
+}
+
+/* ══════════════════════════════════
+   METHOD
+══════════════════════════════════ */
+.method-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px; margin: 36px 0; align-items: start;
+}
+.method-img-frame {
+  background: #fff;
+  border: 1px solid #ddd; border-radius: 6px; overflow: hidden;
+}
+.method-img-frame img { width: 100%; height: auto; display: block; }
+.method-desc {
+  display: flex; flex-direction: column; gap: 18px;
+}
+.method-point {
+  background: #fff; border: 1px solid #ddd;
+  border-left: 4px solid #b07040;
+  border-radius: 0 4px 4px 0;
+  padding: 14px 18px;
+}
+.mp-label {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: #b07040; margin-bottom: 5px;
+}
+.mp-text { font-size: 13px; font-weight: 300; color: #555; line-height: 1.6; }
+
+/* PHASES ROW */
+.phases-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  gap: 0; align-items: center;
+  margin: 36px 0;
+}
+.phase-arrow {
+  font-size: 24px; color: #ccc;
+  text-align: center; padding: 0 8px;
+  padding-bottom: 28px;
+}
+.phase-card {
+  background: #fff; border: 1px solid #ddd;
+  border-radius: 4px; padding: 22px 18px;
+}
+.phase-num {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #bbb; margin-bottom: 8px;
+}
+.phase-title {
+  font-size: 16px; font-weight: 700;
+  color: #111; line-height: 1.25; margin-bottom: 6px;
+}
+.phase-n {
+  font-family: 'Courier New', monospace;
+  font-size: 11px; font-weight: 600; color: #7a5230;
+  background: #f2ebe0; border: 1px solid #d9c9b0;
+  border-radius: 2px; padding: 2px 7px;
+  display: inline-block; margin-bottom: 8px;
+}
+.phase-detail { font-size: 12.5px; font-weight: 300; color: #777; line-height: 1.6; }
+
+/* ══════════════════════════════════
+   CONCEPTUAL DIAGRAM SECTION
+══════════════════════════════════ */
+.diagram-section { margin: 40px 0; }
+.diagram-frame {
+  background: #fff; border: 1px solid #ddd;
+  border-radius: 6px; overflow: hidden;
+}
+.diagram-frame svg { display: block; width: 100%; height: auto; }
+.diagram-caption {
+  padding: 12px 18px;
+  font-size: 13px; font-weight: 300;
+  color: #888; font-style: italic;
+  border-top: 1px solid #eee; line-height: 1.55;
+}
+
+/* ══════════════════════════════════
+   GENERATIONAL COHORTS
+══════════════════════════════════ */
+.cohort-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; margin: 32px 0;
+}
+.cohort-card {
+  background: #fff;
+  border: 1px solid #ddd; border-radius: 6px;
+  padding: 24px 22px;
+  border-top: 4px solid #ddd;
+}
+.cohort-card.gen-z   { border-top-color: #5a7fbf; }
+.cohort-card.millennial { border-top-color: #b07040; }
+.cohort-card.gen-x   { border-top-color: #4a7a5a; }
+
+.cohort-tag {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.gen-z .cohort-tag { color: #5a7fbf; }
+.millennial .cohort-tag { color: #b07040; }
+.gen-x .cohort-tag { color: #4a7a5a; }
+
+.cohort-years {
+  font-family: 'Courier New', monospace;
+  font-size: 12px; color: #bbb; margin-bottom: 14px;
+}
+.cohort-desc {
+  font-size: 14px; font-weight: 300;
+  color: #555; line-height: 1.7; margin-bottom: 16px;
+  padding-bottom: 16px; border-bottom: 1px solid #eee;
+}
+.ct-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: #bbb; margin-bottom: 6px;
+}
+.cohort-tech {
+  font-size: 13px; font-weight: 300;
+  color: #666; line-height: 1.65; margin-bottom: 16px;
+  padding-bottom: 16px; border-bottom: 1px solid #eee;
+}
+.cohort-tech em { font-style: italic; }
+
+.persona-row { display: flex; flex-direction: column; gap: 10px; }
+.persona {
+  background: #faf9f7;
+  border: 1px solid #eee;
+  border-radius: 3px; padding: 10px 12px;
+}
+.p-name { font-size: 13px; font-weight: 700; color: #111; margin-bottom: 2px; }
+.p-role { font-size: 11px; color: #bbb; margin-bottom: 5px; }
+.p-note { font-size: 12px; font-weight: 300; color: #777; line-height: 1.5; font-style: italic; }
+
+/* ══════════════════════════════════
+   NINE THEMES
+══════════════════════════════════ */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px; margin: 32px 0;
+}
+.theme-card {
+  background: #fff; border: 1px solid #ddd;
+  border-radius: 4px; padding: 22px 18px;
+}
+.theme-num {
+  font-family: 'Courier New', monospace;
+  font-size: 11px; font-weight: 700;
+  color: #ccc; margin-bottom: 8px;
+}
+.theme-title {
+  font-size: 15px; font-weight: 700;
+  color: #111; line-height: 1.25; margin-bottom: 10px;
+}
+.theme-body {
+  font-size: 13px; font-weight: 300;
+  color: #666; line-height: 1.65; margin-bottom: 12px;
+}
+.theme-quote {
+  font-size: 13px; font-style: italic;
+  color: #b07040; line-height: 1.5;
+  border-left: 3px solid #e8d0b8;
+  padding-left: 10px;
+}
+
+/* ══════════════════════════════════
+   CENTRAL FINDING CALLOUT
+══════════════════════════════════ */
+.insight-callout {
+  background: #1a1a1a; color: #f5f3ee;
+  border-radius: 4px; padding: 40px 44px;
+  margin: 40px 0;
+}
+.ic-eyebrow {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #b07040; margin-bottom: 16px;
+}
+.ic-text {
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 300; line-height: 1.82;
+  color: #e8e4de;
+}
+.ic-text em { font-style: italic; color: #d4a870; }
+
+/* ══════════════════════════════════
+   SKETCH PLACEHOLDER
+══════════════════════════════════ */
+.sketch-placeholder-frame {
+  border: 2px dashed #d8d0c4;
+  border-radius: 6px; background: #faf8f4;
+  margin: 24px 0;
+}
+.spf-inner {
+  min-height: 220px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 40px; text-align: center;
+}
+.spf-title {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #ccc; margin-bottom: 14px;
+}
+.spf-text {
+  font-size: 14px; font-weight: 300;
+  color: #bbb; line-height: 1.75;
+}
+.spf-text code {
+  font-family: 'Courier New', monospace;
+  font-size: 12px; background: #ede8e0;
+  padding: 2px 6px; border-radius: 2px; color: #b07040;
+}
+
+/* ══════════════════════════════════
+   LIMITATIONS
+══════════════════════════════════ */
+.limits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px; margin: 32px 0;
+}
+.limit-card {
+  background: #fff; border: 1px solid #ddd;
+  border-radius: 4px; padding: 20px 20px 24px;
+}
+.lim-title {
+  font-size: 13px; font-weight: 700;
+  color: #111; margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.lim-body { font-size: 14px; font-weight: 300; color: #666; line-height: 1.7; }
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media (max-width: 720px) {
+  .t-meta          { grid-template-columns: 1fr 1fr; }
+  .motivation-block { grid-template-columns: 1fr; }
+  .meme-grid       { grid-template-columns: 1fr 1fr; }
+  .method-visual   { grid-template-columns: 1fr; }
+  .phases-row      { grid-template-columns: 1fr; }
+  .phase-arrow     { display: none; }
+  .cohort-grid     { grid-template-columns: 1fr; }
+  .themes-grid     { grid-template-columns: 1fr 1fr; }
+  .limits-grid     { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .meme-grid  { grid-template-columns: 1fr; }
+  .themes-grid { grid-template-columns: 1fr; }
+}

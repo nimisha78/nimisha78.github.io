@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  background-color: #f5f4f1;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #2a2a2a;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+}
+
+.image-container img {
+  width: 380px;
+  filter: grayscale(100%);
+  transition: 0.6s ease;
+}
+
+.image-container img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.text-container {
+  max-width: 480px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.tagline {
+  font-size: 16px;
+  background: #9fb3d6;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 30px;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.home-links {
+  margin-top: 40px;
+}
+
+.home-links a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #2C2F5A;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.home-links a:hover {
+  opacity: 0.6;
+}
+
+
+.about-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px;
+}
+
+.about-card {
+  width: 300px;
+  padding: 30px;
+  background: #e9e6df;
+  transition: 0.4s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+}
+
+.about-card h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-card ul {
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
+
+.projects {
+  padding: 100px;
+}
+
+.project-block {
+  margin-bottom: 80px;
+}
+
+.project-block h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 6px 12px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.project-block a {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #2C2F5A;
+  text-decoration: none;
+}
+
+
+.project-detail {
+  padding: 100px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.highlight-problem {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0;
+  color: #2C2F5A;
+}
+
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.bubble {
+  background: #e0e0e0;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.method-table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+}
+
+.method-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.insights {
+  line-height: 1.8;
+}
+
+.model-arrow {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #2C2F5A;
+}
+
+.problem-block {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.gen-grid {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.gen-box {
+  flex: 1;
+  background: #e9e6df;
+  padding: 20px;
+}
+
+.big-conclusion {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 100px;
+}
+
+.contact-line {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.contact-divider {
+  width: 60px;
+  height: 1px;
+  background: #2C2F5A;
+  margin: 30px auto;
+}
+
+.easter-egg {
+  opacity: 0.4;
+  transition: 0.4s ease;
+}
+
+
+<section class="projects">
+
+  <div class="project-cover">
+
+    <img src="images/cover.jpg" alt="Cyberbullying Cover">
+
+    <div class="project-overlay">
+      <h2>Behind the Screen: Understanding Cyberbullying in India</h2>
+
+      <div class="tags">
+        <span>Online Aggression</span>
+        <span>Digital Behavior</span>
+        <span>Victim Experience</span>
+        <span>Psychometrics</span>
+      </div>
+
+      <a href="cyberbullying.html" class="project-link">
+        View Project →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+/* ================================= */
+/* ✨ UPDATED: Project Card Layout   */
+/* ================================= */
+
+.project-card {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 900px;
+  margin-bottom: 80px;
+}
+
+.project-card img {
+  width: 250px;   /* ✨ SMALLER (1/4 feel) */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.4s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-cover img {
+  width: 25%; /* was full width */
+  border-radius: 8px;
+}
+
+
+/* PROJECT CARD VIDEO SUPPORT */
+
+.project-card video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+
+/* ===============================
+   Floating Academic Letters
+================================ */
+
+.floating-letters {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-letters span {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 600;
+  color: rgba(120, 110, 95, 0.06);
+  animation: float 18s infinite linear;
+}
+
+/* Random positions */
+.floating-letters span:nth-child(1) { left: 10%; top: 80%; animation-duration: 22s; }
+.floating-letters span:nth-child(2) { left: 70%; top: 60%; animation-duration: 25s; }
+.floating-letters span:nth-child(3) { left: 30%; top: 30%; animation-duration: 20s; }
+.floating-letters span:nth-child(4) { left: 85%; top: 20%; animation-duration: 28s; }
+.floating-letters span:nth-child(5) { left: 50%; top: 75%; animation-duration: 24s; }
+.floating-letters span:nth-child(6) { left: 15%; top: 50%; animation-duration: 26s; }
+.floating-letters span:nth-child(7) { left: 60%; top: 10%; animation-duration: 30s; }
+.floating-letters span:nth-child(8) { left: 40%; top: 65%; animation-duration: 23s; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Make sure content stays above */
+.project-detail,
+.projects {
+  position: relative;
+  z-index: 2;
+}
