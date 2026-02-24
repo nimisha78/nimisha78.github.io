@@ -228,3 +228,35 @@
   .findings-pair { grid-template-columns: 1fr; }
   .case-grid     { grid-template-columns: 1fr; }
 }
+
+
+
+/* ══════════════════════════════════
+   RESEARCH QUESTIONS (RQ)
+══════════════════════════════════ */
+
+.rq-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 32px 0 44px;
+}
+
+.rq-bubbles span {
+  background: #eaeaf6;
+  border: 1px solid #c0c2e0;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2C2F5A;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  transition: all 0.2s ease;
+}
+
+.rq-bubbles span:hover {
+  background: #dcdcf2;
+  border-color: #2C2F5A;
+}
+
